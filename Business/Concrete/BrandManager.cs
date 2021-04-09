@@ -25,5 +25,6 @@ namespace Business.Concrete
         {
             return _brandDal.Get(b => b.BrandId == brandId);
         }
+
     }
 }
