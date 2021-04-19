@@ -49,6 +49,7 @@ namespace Business.Concrete
         {
             return new SuccessDataResult<List<Car>>(_carDal.GetAll(c => c.ColorId == id));
         }
+       
 
         public IResult Update(Car car)
         {
