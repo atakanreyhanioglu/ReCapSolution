@@ -17,5 +17,6 @@ namespace Business.Abstract
 
         IDataResult<User> GetById(int userId);
         User GetByMail(string email);
+        IResult AddTransactionalTest(User user);
     }
 }
