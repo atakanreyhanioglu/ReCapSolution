@@ -22,7 +22,7 @@ namespace WebAPI.Controllers
         }
 
 
-        [HttpGet("getallimages")]
+        [HttpGet("getall")]
 
         public IActionResult GetAll()
         {
@@ -45,7 +45,7 @@ namespace WebAPI.Controllers
         }
 
 
-        [HttpPost("addimage")]
+        [HttpPost("add")]
        
         public IActionResult Add([FromForm(Name = "Image")] IFormFile file, [FromForm] CarImage carImage)
         {
@@ -57,7 +57,7 @@ namespace WebAPI.Controllers
             return BadRequest(result);
         }
 
-        [HttpPost("deleteimage")]
+        [HttpPost("delete")]
 
         public IActionResult Delete([FromForm(Name = ("carImageId"))] int carImageId)
         {

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Core.Entities.Concrete;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -35,5 +36,19 @@ namespace Business.Constants
         public static string CarImageUpdated = "Car Image Updated!";
 
         public static string CarImageLimitExceeded = "Car add limit is 5.";
+
+        public static string UserNotFound = "User not found.";
+
+        public static string PasswordError = "Password invalid!";
+
+        public static string SuccessfulLogin = "Successful Login!";
+
+        public static string UserAlreadyExists = "UserAlreadyExists";
+
+        public static string UserRegistered = "User Registered!";
+
+        public static string AccessTokenCreated = "Access Token Created";
+
+        
     }
 }
