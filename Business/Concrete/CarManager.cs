@@ -70,15 +70,23 @@ namespace Business.Concrete
             return new SuccessDataResult<Car>(_carDal.Get(c=>c.Id == carId));
         }
 
-        [TransactionScopeAspect]
+        //[TransactionScopeAspect]
 
-        public IResult AddTransactionalTest(Car car)
-        {
-            _carDal.Update(car);
-            _carDal.Add(car);
-            return new SuccessResult();
+        //public IResult AddTransactionalTest(Car car)
+        //{
+        //    _carDal.Update(car);
+        //    _carDal.Add(car);
+        //    return new SuccessResult();
 
             
+        //}
+
+
+        public IDataResult<List<CarDetailDto>> GetCarDetailsByCarId(int carId)
+        {
+            throw new NotImplementedException();
         }
+
+       
     }
 }
