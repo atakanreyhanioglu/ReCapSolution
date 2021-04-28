@@ -19,6 +19,6 @@ N-Katmanlı Solid mimari yapısı ile hazırlanan, EntityFramework kullanılarak
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: [Customer.cs](https://github.com/atakanreyhanioglu/ReCapSolution/blob/master/Entities/Concrete/Customer.cs) 
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: [Rental.cs](https://github.com/atakanreyhanioglu/ReCapSolution/blob/master/Entities/Concrete/Rental.cs) 
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: [Brand.cs](https://github.com/atakanreyhanioglu/ReCapSolution/blob/master/Entities/Concrete/Brand.cs)  
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: [Car.cs](https://github.com/atakanreyhanioglu/ReCapSolution/blob/master/Entities/Concrete/Car.cs)  
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: [Color.cs](https://github.com/atakanreyhanioglu/ReCapSolution/blob/master/Entities/Concrete/Color.cs)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: [Car.cs](https://github.com/atakanreyhanioglu/ReCapSolution/blob/master/Entities/Concrete/Car.cs)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: [Color.cs](https://github.com/atakanreyhanioglu/ReCapSolution/blob/master/Entities/Concrete/Color.cs)  
 
