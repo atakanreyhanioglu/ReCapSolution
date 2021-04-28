@@ -11,7 +11,7 @@ N-Katmanlı Solid mimari yapısı ile hazırlanan, EntityFramework kullanılarak
 ### Entities Katmanı
 **Entities Katmanı**'nda **Dtos** ve **Concrete** olmak üzere iki adet klasör bulunmaktadır.Concrete klasörü veri tabanından gelen somut nesnelerin özelliklerini tutmak için oluşturulmuştur.Dtos klasörü ise veri tabanında birbiri ile ilişkili olan nesnelerin ilişkili özelliklerini birlikte kullanabilmek için oluşturulmuştur.
 <br><br>:file_folder:`Dtos`  
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: [CarDetailDto.cs](https://github.com/atakanreyhanioglu/ReCapSolution/blob/master/Entities/DTOs/CarDetailDto.cs) 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: [CarDetailDto.cs](https://github.com/atakanreyhanioglu/ReCapSolution/blob/master/Entities/DTOs/CarDetailDto.cs) 
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: [RentalDetailDto.cs](https://github.com/atakanreyhanioglu/ReCapSolution/blob/master/Entities/DTOs/RentalDetailDto.cs) 
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: [UserForLoginDto.cs](https://github.com/atakanreyhanioglu/ReCapSolution/blob/master/Entities/DTOs/UserForLoginDto.cs) 
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: [UserForRegisterDto.cs](https://github.com/atakanreyhanioglu/ReCapSolution/blob/master/Entities/DTOs/UserForRegisterDto.cs) 
@@ -28,7 +28,7 @@ N-Katmanlı Solid mimari yapısı ile hazırlanan, EntityFramework kullanılarak
 **Core Katmanı** evrensel bir katmandır. Geliştirilecek her projede kullanılabilir, isimlendirme kuralları ve oluşturulma düzeni sebebi ile oldukça kullanışlıdır. **Core Katmanı**'nda **DataAccess**, **Entities**, **Utilities**, **Aspects**, **CrossCuttingConcerns**, **DependencyResolvers** ve **Extensions** klasörleri bulunmaktadır.
 **Aspects** kasörü Caching, Validation, Transaction,Performance işlemlerinin Autofac attribute altyapısını hazırlar.**CrossCuttingConcerns** klasöründe Validation ve Cache yönetimi proje içerisinde, dikey katmanda dinamik çalışabilmesi için (generics)genelleştirildi.**DependencyResolvers** klasöründe servis konfigrasyonları yapıldı.**DataAccess** klasöründe bütün CRUD operasyonları ve DataBaseler generic olarak yapılandırıldı.**Extensions** içerisinde Jwt için yönetimi kolaylaştıran genişlemeler yapıldı.**Utilities** içerisinde iş metodu kurallarının yönetimi kolaylaştırıldı, belge ekleme işlemleri kodlandı,Aspectlerin araya girebilmesi için alt yapı hazırlandı ve ezilmeyi bekliyor, Results yapısı kurularak hata yönetimi yapılandırıldı, Jwt ve hashing teknikleriyle güvenlik yapılandırıldı.
 <br> <br> :file_folder:`Core`  
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: [Autofac](https://github.com/atakanreyhanioglu/ReCapSolution/tree/master/Core/Aspects/Autofac) 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: [Autofac](https://github.com/atakanreyhanioglu/ReCapSolution/tree/master/Core/Aspects/Autofac) 
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: [CrossCuttingConcerns](https://github.com/atakanreyhanioglu/ReCapSolution/tree/master/Core/CrossCuttingConcerns) 
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: [DataAccess](https://github.com/atakanreyhanioglu/ReCapSolution/tree/master/Core/DataAccess) 
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: [DependencyResolvers](https://github.com/atakanreyhanioglu/ReCapSolution/tree/master/Core/DependencyResolvers)  
@@ -40,7 +40,7 @@ N-Katmanlı Solid mimari yapısı ile hazırlanan, EntityFramework kullanılarak
 ###  Data Access Katmanı
 **Data Access Katmanı**'nda **Abstract** interfaceleri barındıran ve **Concrete** classları barındıran klasörler bulunmaktadır.Crud operasyonlarını core katmanından miras alarak gerçekleştirmektedir.Gelebilecek iş kodları için altyapı burada hazırlanır.Objelerin data transferleri için kullanacağı data baseler ve varlıkların bağlantıları **Data Access Katmanı**'nda yapılandırıldı.
 <br> <br> :file_folder:`DataAccess` 
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: [Abstract](https://github.com/atakanreyhanioglu/ReCapSolution/tree/master/DataAccess/Abstract)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: [Abstract](https://github.com/atakanreyhanioglu/ReCapSolution/tree/master/DataAccess/Abstract)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: [EntityFramework](https://github.com/atakanreyhanioglu/ReCapSolution/tree/master/DataAccess/Concrete/EntityFramework)  
 
 
