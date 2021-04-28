@@ -13,29 +13,39 @@ namespace DataAccess.Concrete.EntityFramework
 {
     public class EfCarDal : EfEntityRepositoryBase<Car, ReCapSqlContext>, ICarDal
     {
-        public List<CarDetailDto> GetCarDetails()
+       
+
+        public List<CarDetailDto> GetCarDetails(Expression<Func<CarDetailDto, bool>> filter = null)
         {
             using (ReCapSqlContext contex = new ReCapSqlContext())
             {
                 var result = from c in contex.Cars
-                             join co in contex.Colors on c.ColorId equals co.ColorId
-                             join br in contex.Brands on c.BrandId equals br.BrandId
+                             join b in contex.Brands on c.BrandId equals b.BrandId
+                             join clr in contex.Colors on c.ColorId equals clr.ColorId
 
                              select new CarDetailDto
                              {
                                  CarId = c.Id,
-                                 DailyPrice = c.DailyPrice,
+                                 BrandId = c.BrandId,
+                                 ColorId = c.ColorId,
                                  CarName = c.Description,
-                                 ColorName = co.ColorName,
-                                 BrandName = br.BrandName,
-                                 ModelYear = c.ModelYear
-
+                                 BrandName = b.BrandName,
+                                 ColorName = clr.ColorName,
+                                 ModelYear = c.ModelYear,
+                                 DailyPrice = c.DailyPrice,
+                                 CarImage = (from i in contex.CarImages
+                                             where (c.Id == i.CarId)
+                                             select new CarImage { CarImageId = i.CarImageId, CarId = c.Id, Date = i.Date, ImagePath = i.ImagePath }).ToList()
                              };
-                return result.ToList();
 
 
+
+                return filter == null ? result.ToList() : result.Where(filter).ToList();
             }
-            
+
         }
+        
+
+
     }
 }

@@ -34,7 +34,7 @@ namespace WebAPI.Controllers
             return BadRequest(result);
         }
         [HttpGet("getbycarid")]
-        public IActionResult GetByCarId([FromForm(Name = "carId")] int carId)
+        public IActionResult GetByCarId(int carId)
         {
             var result = _carImageService.GetImagesByCarId(carId);
             if (result.Success)

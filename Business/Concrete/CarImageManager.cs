@@ -53,7 +53,7 @@ namespace Business.Concrete
             [ValidationAspect(typeof(CarImageValidator))]
             public IDataResult<CarImage> Get(int id)
             {
-                return new SuccessDataResult<CarImage>(_carImageDAL.Get(c => c.Id == id));
+                return new SuccessDataResult<CarImage>(_carImageDAL.Get(c => c.CarImageId == id));
             }
             
             public IDataResult<List<CarImage>> GetAll()
@@ -76,7 +76,7 @@ namespace Business.Concrete
 
         public IResult Delete(CarImage carImage)
         {
-            var image = _carImageDAL.Get(c => c.Id == carImage.Id);
+            var image = _carImageDAL.Get(c => c.CarImageId == carImage.CarImageId);
             if (image == null)
             {
                 return new ErrorResult("Image not found");
@@ -87,7 +87,7 @@ namespace Business.Concrete
         }
         public IResult Update(IFormFile file, CarImage carImage)
         {
-            var isImage = _carImageDAL.Get(c => c.Id == carImage.Id);
+            var isImage = _carImageDAL.Get(c => c.CarImageId == carImage.CarImageId);
             if (isImage == null)
             {
                 return new ErrorResult("Image not found");
