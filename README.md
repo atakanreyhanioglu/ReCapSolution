@@ -43,4 +43,18 @@ N-Katmanlı Solid mimari yapısı ile hazırlanan, EntityFramework kullanılarak
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: [Abstract](https://github.com/atakanreyhanioglu/ReCapSolution/tree/master/DataAccess/Abstract)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: [EntityFramework](https://github.com/atakanreyhanioglu/ReCapSolution/tree/master/DataAccess/Concrete/EntityFramework)  
 
+![business](https://i.ibb.co/nmb6m8y/Data-Access.png)
+###  Business Katmanı
+**Business Katmanı**'nda altyapısı hazır olan bütün serviserin yönetimleri yazıldı.Sürekli değişebilen iş kodlarımızı altyapıyı değiştirmeden ekleyebildiğimiz katmandır.Sürekliliğin korunduğu ReCap projemde birçok değişikliğin sadece burada yapılıyor olması yönetimi, sürekli gelişimi çok kolaylaştırmaktadır.
+<br> <br> :file_folder:`Concrete`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: [AuthManager.cs](https://github.com/atakanreyhanioglu/ReCapSolution/blob/master/Business/Concrete/AuthManager.cs)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: [BrandManager.cs](https://github.com/atakanreyhanioglu/ReCapSolution/blob/master/Business/Concrete/BrandManager.cs)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: [CarImageManager.cs](https://github.com/atakanreyhanioglu/ReCapSolution/blob/master/Business/Concrete/CarImageManager.cs)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: [CarManager.cs](https://github.com/atakanreyhanioglu/ReCapSolution/blob/master/Business/Concrete/CarManager.cs)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: [ColorManager.cs](https://github.com/atakanreyhanioglu/ReCapSolution/blob/master/Business/Concrete/ColorManager.cs)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: [CustomerManager.cs](https://github.com/atakanreyhanioglu/ReCapSolution/blob/master/Business/Concrete/CustomerManager.cs)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: [RentalManager.cs](https://github.com/atakanreyhanioglu/ReCapSolution/blob/master/Business/Concrete/RentalManager.cs)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: [UserManager.cs](https://github.com/atakanreyhanioglu/ReCapSolution/blob/master/Business/Concrete/UserManager.cs)
+
+
 
