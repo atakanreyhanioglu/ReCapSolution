@@ -40,12 +40,12 @@ N-Katmanlı Solid mimari yapısı ile hazırlanan, EntityFramework kullanılarak
 ###  Data Access Katmanı
 **Data Access Katmanı**'nda **Abstract** interfaceleri barındıran ve **Concrete** classları barındıran klasörler bulunmaktadır.Crud operasyonlarını core katmanından miras alarak gerçekleştirmektedir.Gelebilecek iş kodları için altyapı burada hazırlanır.Objelerin data transferleri için kullanacağı data baseler ve varlıkların bağlantıları **Data Access Katmanı**'nda yapılandırıldı.
 <br> <br> :file_folder:`DataAccess` 
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: [Abstract](https://github.com/atakanreyhanioglu/ReCapSolution/tree/master/DataAccess/Abstract)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: [EntityFramework](https://github.com/atakanreyhanioglu/ReCapSolution/tree/master/DataAccess/Concrete/EntityFramework)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: [EfCarDal.cs](https://github.com/atakanreyhanioglu/ReCapSolution/blob/master/DataAccess/Concrete/EntityFramework/EfCarDal.cs) 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: [EfRentalDal.cs](https://github.com/atakanreyhanioglu/ReCapSolution/blob/master/DataAccess/Concrete/EntityFramework/EfRentalDal.cs) 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: [EfUserDal.cs](https://github.com/atakanreyhanioglu/ReCapSolution/blob/master/DataAccess/Concrete/EntityFramework/EfUserDal.cs) 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: [ReCapSqlContext.cs](https://github.com/atakanreyhanioglu/ReCapSolution/blob/master/DataAccess/Concrete/EntityFramework/ReCapSqlContext.cs) 
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up::file_folder: [Abstract](https://github.com/atakanreyhanioglu/ReCapSolution/tree/master/DataAccess/Abstract)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up::file_folder: [EntityFramework](https://github.com/atakanreyhanioglu/ReCapSolution/tree/master/DataAccess/Concrete/EntityFramework)  
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: [EfCarDal.cs](https://github.com/atakanreyhanioglu/ReCapSolution/blob/master/DataAccess/Concrete/EntityFramework/EfCarDal.cs) 
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: [EfRentalDal.cs](https://github.com/atakanreyhanioglu/ReCapSolution/blob/master/DataAccess/Concrete/EntityFramework/EfRentalDal.cs) 
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: [EfUserDal.cs](https://github.com/atakanreyhanioglu/ReCapSolution/blob/master/DataAccess/Concrete/EntityFramework/EfUserDal.cs) 
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: [ReCapSqlContext.cs](https://github.com/atakanreyhanioglu/ReCapSolution/blob/master/DataAccess/Concrete/EntityFramework/ReCapSqlContext.cs) 
 
 ![business](https://i.ibb.co/nmb6m8y/Data-Access.png)
 ###  Business Katmanı
