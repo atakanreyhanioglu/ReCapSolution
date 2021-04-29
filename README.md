@@ -63,6 +63,6 @@ N-Katmanlı Solid mimari yapısı ile hazırlanan, EntityFramework kullanılarak
 ![tables](https://i.ibb.co/jGRz9Cs/Data-Access.png)
 ###  Databases And Tables 
 Şekilde Database tabloları gösterilmiştir.
-![tables2](https://i.ibb.co/gdZ9P7v/Cars.jpg)
+![tables2](https://i.ibb.co/hMLpPgL/Cars-1.jpg)
 
 
