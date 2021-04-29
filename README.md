@@ -56,5 +56,8 @@ N-Katmanlı Solid mimari yapısı ile hazırlanan, EntityFramework kullanılarak
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: [RentalManager.cs](https://github.com/atakanreyhanioglu/ReCapSolution/blob/master/Business/Concrete/RentalManager.cs)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: [UserManager.cs](https://github.com/atakanreyhanioglu/ReCapSolution/blob/master/Business/Concrete/UserManager.cs)
 
+![tables](https://i.ibb.co/jGRz9Cs/Data-Access.png)
+###  Databases And Tables 
+Şekilde Database tabloları gösterilmiştir.
 
 
