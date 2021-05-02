@@ -33,9 +33,9 @@ namespace DataAccess.Concrete.EntityFramework
                                  ColorName = clr.ColorName,
                                  ModelYear = c.ModelYear,
                                  DailyPrice = c.DailyPrice,
-                                 CarImage = (from i in contex.CarImages
+                                  CarImage = (from i in contex.CarImages
                                              where (c.Id == i.CarId)
-                                             select new CarImage { CarImageId = i.CarImageId, CarId = c.Id, Date = i.Date, ImagePath = i.ImagePath }).ToList()
+                                             select i.ImagePath).FirstOrDefault()
                              };
 
 
