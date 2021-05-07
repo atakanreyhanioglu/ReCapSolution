@@ -65,4 +65,13 @@ N-Katmanlı Solid mimari yapısı ile hazırlanan, EntityFramework kullanılarak
 Şekilde Database tabloları gösterilmiştir.
 ![tables2](https://i.ibb.co/hMLpPgL/Cars-1.jpg)
 
+###  Projeden görüntüler [ReCap Frontend](https://github.com/atakanreyhanioglu/ReCapFrontend) 
+![image0](https://raw.githubusercontent.com/atakanreyhanioglu/ReCapFrontend/master/images/0.png)
+![image1](https://raw.githubusercontent.com/atakanreyhanioglu/ReCapFrontend/master/images/1.png)
+![image2](https://raw.githubusercontent.com/atakanreyhanioglu/ReCapFrontend/master/images/2.png)
+![image3](https://raw.githubusercontent.com/atakanreyhanioglu/ReCapFrontend/master/images/3.png)
+![image4](https://raw.githubusercontent.com/atakanreyhanioglu/ReCapFrontend/master/images/4.png)
+![image5](https://raw.githubusercontent.com/atakanreyhanioglu/ReCapFrontend/master/images/5.png)
+
+
 
