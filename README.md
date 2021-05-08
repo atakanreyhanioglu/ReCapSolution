@@ -6,19 +6,9 @@
 N-Katmanlı Solid mimari yapısı ile hazırlanan, EntityFramework kullanılarak CRUD işlemlerinin yapıldığı, kayıt olma giriş yapabilme Jwt teknikleri ile token alarak güvenliği sağlanan, Caching, Validation, Transaction,Performance işlemlerini Autofac paketi ile oluşturulan Aspectleri kullanarak gerçekleştiren, Wpf arayüzü ile çalışan, araç Kiralama iş yerlerine yönelik örnek bir projedir.Proje içerisinde data kaynakları kolayca değiştirilebilir, yeni nesneler eklenebilir, bütün iş istekleri değiştirilebilir.Yapılacak olanlar eski kodları bozmadan sürekli ekleme ile yapılabilir.Proje sürdürülebilirlik prensibini yerine getirmektedir.
 
 ### Backend Tecnologies
-Asp.Net Core for Restful api
-MsSql
-EntityFramework Core
-Autofac
-FluentValidation
-Backend Techniques
+MsSql, Asp.Net Core for Restful api,EntityFramework Core,Autofac,FluentValidation
 ### Layered Architecture Design Pattern
-AOP
-JWT
-Autofac dependency resolver
-IOC
-Aspects
-File upload
+IOC,AOP,Aspects,JWT
 
 ## :books:Katmanlar
 ![entities](https://i.ibb.co/LJn8Y9X/Ads-z-tasar-m.jpg)
