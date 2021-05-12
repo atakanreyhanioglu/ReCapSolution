@@ -77,9 +77,10 @@ namespace Business.Concrete
             return new SuccessDataResult<List<CarDetailDto>>(_carDal.GetCarDetails());
         }
 
-        public IDataResult<CarDetailDto> GetById(int carId)
+        public IDataResult<Car> GetById(int carId)
         {
-            throw new NotImplementedException();
+            return new SuccessDataResult<Car>(_carDal.Get(c => c.Id == carId));
+
         }
 
 

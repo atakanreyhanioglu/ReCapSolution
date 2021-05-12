@@ -5,11 +5,6 @@
 ## :pushpin:Proje Hakkında
 N-Katmanlı Solid mimari yapısı ile hazırlanan, EntityFramework kullanılarak CRUD işlemlerinin yapıldığı, kayıt olma giriş yapabilme Jwt teknikleri ile token alarak güvenliği sağlanan, Caching, Validation, Transaction,Performance işlemlerini Autofac paketi ile oluşturulan Aspectleri kullanarak gerçekleştiren, Wpf arayüzü ile çalışan, araç Kiralama iş yerlerine yönelik örnek bir projedir.Proje içerisinde data kaynakları kolayca değiştirilebilir, yeni nesneler eklenebilir, bütün iş istekleri değiştirilebilir.Yapılacak olanlar eski kodları bozmadan sürekli ekleme ile yapılabilir.Proje sürdürülebilirlik prensibini yerine getirmektedir.
 
-### Backend Tecnologies
-MsSql, Asp.Net Core for Restful api, EntityFramework, Core, Autofac, FluentValidation
-### Layered Architecture Design Pattern
-IOC, AOP, Aspects, JWT
-
 ## :books:Katmanlar
 ![entities](https://i.ibb.co/LJn8Y9X/Ads-z-tasar-m.jpg)
 
@@ -45,12 +40,8 @@ IOC, AOP, Aspects, JWT
 ###  Data Access Katmanı
 **Data Access Katmanı**'nda **Abstract** interfaceleri barındıran ve **Concrete** classları barındıran klasörler bulunmaktadır.Crud operasyonlarını core katmanından miras alarak gerçekleştirmektedir.Gelebilecek iş kodları için altyapı burada hazırlanır.Objelerin data transferleri için kullanacağı data baseler ve varlıkların bağlantıları **Data Access Katmanı**'nda yapılandırıldı.
 <br> <br> :file_folder:`DataAccess` 
-<br>&nbsp;&nbsp;&nbsp;:file_folder: [Abstract](https://github.com/atakanreyhanioglu/ReCapSolution/tree/master/DataAccess/Abstract)  
-&nbsp;&nbsp;&nbsp;:file_folder: [EntityFramework](https://github.com/atakanreyhanioglu/ReCapSolution/tree/master/DataAccess/Concrete/EntityFramework)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: [EfCarDal.cs](https://github.com/atakanreyhanioglu/ReCapSolution/blob/master/DataAccess/Concrete/EntityFramework/EfCarDal.cs) 
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: [EfRentalDal.cs](https://github.com/atakanreyhanioglu/ReCapSolution/blob/master/DataAccess/Concrete/EntityFramework/EfRentalDal.cs) 
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: [EfUserDal.cs](https://github.com/atakanreyhanioglu/ReCapSolution/blob/master/DataAccess/Concrete/EntityFramework/EfUserDal.cs) 
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: [ReCapSqlContext.cs](https://github.com/atakanreyhanioglu/ReCapSolution/blob/master/DataAccess/Concrete/EntityFramework/ReCapSqlContext.cs) 
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: [Abstract](https://github.com/atakanreyhanioglu/ReCapSolution/tree/master/DataAccess/Abstract)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: [EntityFramework](https://github.com/atakanreyhanioglu/ReCapSolution/tree/master/DataAccess/Concrete/EntityFramework)  
 
 ![business](https://i.ibb.co/nmb6m8y/Data-Access.png)
 ###  Business Katmanı
@@ -64,37 +55,6 @@ IOC, AOP, Aspects, JWT
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: [CustomerManager.cs](https://github.com/atakanreyhanioglu/ReCapSolution/blob/master/Business/Concrete/CustomerManager.cs)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: [RentalManager.cs](https://github.com/atakanreyhanioglu/ReCapSolution/blob/master/Business/Concrete/RentalManager.cs)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: [UserManager.cs](https://github.com/atakanreyhanioglu/ReCapSolution/blob/master/Business/Concrete/UserManager.cs)
-
-![tables](https://i.ibb.co/jGRz9Cs/Data-Access.png)
-###  Databases And Tables 
-Şekilde Database tabloları gösterilmiştir.
-![tables2](https://i.ibb.co/hMLpPgL/Cars-1.jpg)
-
-* * *
-
-###  Projeden görüntüler [ReCap Frontend](https://github.com/atakanreyhanioglu/ReCapFrontend) 
-
-![image0](https://raw.githubusercontent.com/atakanreyhanioglu/ReCapFrontend/master/images/0.png)
-
-* * *
-
-![image1](https://raw.githubusercontent.com/atakanreyhanioglu/ReCapFrontend/master/images/1.png)
-
-* * *
-
-![image2](https://raw.githubusercontent.com/atakanreyhanioglu/ReCapFrontend/master/images/2.png)
-
-* * *
-
-![image3](https://raw.githubusercontent.com/atakanreyhanioglu/ReCapFrontend/master/images/3.png)
-
-* * *
-
-![image4](https://raw.githubusercontent.com/atakanreyhanioglu/ReCapFrontend/master/images/4.png)
-
-* * *
-
-![image5](https://raw.githubusercontent.com/atakanreyhanioglu/ReCapFrontend/master/images/5.png)
 
 
 

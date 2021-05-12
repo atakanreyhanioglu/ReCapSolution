@@ -15,13 +15,13 @@ namespace DataAccess.Concrete.EntityFramework
     {
        
 
-        public List<CarDetailDto> GetCarDetails(Expression<Func<CarDetailDto, bool>> filter = null)
+        public List<CarDetailDto> GetCarDetails(Expression<Func<CarDetailDto    , bool>> filter = null)
         {
-            using (ReCapSqlContext contex = new ReCapSqlContext())
+            using (ReCapSqlContext context = new ReCapSqlContext())
             {
-                var result = from c in contex.Cars
-                             join b in contex.Brands on c.BrandId equals b.BrandId
-                             join clr in contex.Colors on c.ColorId equals clr.ColorId
+                var result = from c in context.Cars
+                             join b in context.Brands on c.BrandId equals b.BrandId
+                             join clr in context.Colors on c.ColorId equals clr.ColorId
 
                              select new CarDetailDto
                              {
@@ -33,7 +33,7 @@ namespace DataAccess.Concrete.EntityFramework
                                  ColorName = clr.ColorName,
                                  ModelYear = c.ModelYear,
                                  DailyPrice = c.DailyPrice,
-                                  CarImage = (from i in contex.CarImages
+                                 CarImage = (from i in context.CarImages
                                              where (c.Id == i.CarId)
                                              select i.ImagePath).FirstOrDefault()
                              };
@@ -42,7 +42,7 @@ namespace DataAccess.Concrete.EntityFramework
 
                 return filter == null ? result.ToList() : result.Where(filter).ToList();
             }
-
+                    
         }
         
 
