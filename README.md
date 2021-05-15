@@ -5,6 +5,13 @@
 ## :pushpin:Proje Hakkında
 N-Katmanlı Solid mimari yapısı ile hazırlanan, EntityFramework kullanılarak CRUD işlemlerinin yapıldığı, kayıt olma giriş yapabilme Jwt teknikleri ile token alarak güvenliği sağlanan, Caching, Validation, Transaction,Performance işlemlerini Autofac paketi ile oluşturulan Aspectleri kullanarak gerçekleştiren, Wpf arayüzü ile çalışan, araç Kiralama iş yerlerine yönelik örnek bir projedir.Proje içerisinde data kaynakları kolayca değiştirilebilir, yeni nesneler eklenebilir, bütün iş istekleri değiştirilebilir.Yapılacak olanlar eski kodları bozmadan sürekli ekleme ile yapılabilir.Proje sürdürülebilirlik prensibini yerine getirmektedir.
 
+### Backend Tecnologies
+MsSql, Asp.Net Core for Restful api,EntityFramework Core,Autofac,FluentValidation
+MsSql, Asp.Net Core for Restful api, EntityFramework, Core, Autofac, FluentValidation
+### Layered Architecture Design Pattern
+IOC,AOP,Aspects,JWT
+IOC, AOP, Aspects, JWT
+
 ## :books:Katmanlar
 ![entities](https://i.ibb.co/LJn8Y9X/Ads-z-tasar-m.jpg)
 
@@ -55,6 +62,32 @@ N-Katmanlı Solid mimari yapısı ile hazırlanan, EntityFramework kullanılarak
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: [CustomerManager.cs](https://github.com/atakanreyhanioglu/ReCapSolution/blob/master/Business/Concrete/CustomerManager.cs)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: [RentalManager.cs](https://github.com/atakanreyhanioglu/ReCapSolution/blob/master/Business/Concrete/RentalManager.cs)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:page_facing_up: [UserManager.cs](https://github.com/atakanreyhanioglu/ReCapSolution/blob/master/Business/Concrete/UserManager.cs)
+
+* * *
+
+###  Projeden görüntüler [ReCap Frontend](https://github.com/atakanreyhanioglu/ReCapFrontend) 
+
+![image0](https://raw.githubusercontent.com/atakanreyhanioglu/ReCapFrontend/master/images/0.png)
+
+* * *
+
+![image1](https://raw.githubusercontent.com/atakanreyhanioglu/ReCapFrontend/master/images/1.png)
+
+* * *
+
+![image2](https://raw.githubusercontent.com/atakanreyhanioglu/ReCapFrontend/master/images/2.png)
+
+* * *
+
+![image3](https://raw.githubusercontent.com/atakanreyhanioglu/ReCapFrontend/master/images/3.png)
+
+* * *
+
+![image4](https://raw.githubusercontent.com/atakanreyhanioglu/ReCapFrontend/master/images/4.png)
+
+* * *
+
+![image5](https://raw.githubusercontent.com/atakanreyhanioglu/ReCapFrontend/master/images/5.png)
 
 
 
