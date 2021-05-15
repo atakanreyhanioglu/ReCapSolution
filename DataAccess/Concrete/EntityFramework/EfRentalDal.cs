@@ -18,27 +18,25 @@ namespace DataAccess.Concrete.EntityFramework
             {
                 var result = from r in context.Rentals
                              join c in context.Cars on r.CarId equals c.Id
-                             join cu in context.Customers on r.CustomerId equals cu.UserId
-                             join u in context.Users on cu.UserId equals u.Id
-                             join clr in context.Colors on c.ColorId equals clr.ColorId
-                             join b in context.Brands on c.BrandId equals b.BrandId
+                             join cus in context.Customers on r.CustomerId equals cus.Id
+                             join u  in context.Users on r.UserId equals u.Id
+                       
 
  
                              select new RentalDetailDto
                              {
                                  Id = r.Id,
-                                 CarId = r.CarId,
-                                 CustomerId = r.CustomerId,
+                                 CarId = r.CarId,                            
                                  UserId = u.Id,
+                                 CustomerId = cus.Id,
+                                 CompanyName = cus.CompanyName,
                                  DailyPrice = c.DailyPrice,
-                                 CarName = c.Description,  
-                                 BrandName = b.BrandName,
-                                 ColorName = clr.ColorName,
+                                 CarName = c.Description,                                
                                  RentDate = r.RentDate,
                                  ReturnDate = r.ReturnDate,
                                  CustomerName = u.FirstName,
                                  CustomerLastName = u.LastName,
-                                 CustomerCompanyName = cu.CompanyName
+                                 
 
 
                              };
@@ -48,3 +46,4 @@ namespace DataAccess.Concrete.EntityFramework
         }
     }
 }
+    
