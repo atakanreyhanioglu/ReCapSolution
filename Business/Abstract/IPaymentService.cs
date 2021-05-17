@@ -16,6 +16,8 @@ namespace Business.Abstract
         IResult Add(Payment payment);
 
         IDataResult<Payment> GetByPaymentId(int paymentId);
+
+            IDataResult<Payment> GetPaymentByUserId(int userId);
     }
 }
 

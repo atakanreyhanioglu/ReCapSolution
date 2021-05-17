@@ -33,7 +33,7 @@ namespace Business.Concrete
 
         public IDataResult<Payment> Get(Payment payment)
         {
-            return new SuccessDataResult<Payment>(_paymentDal.Get(x => x.PaymentId == payment.PaymentId));
+            return new SuccessDataResult<Payment>(_paymentDal.Get(x => x.Id == payment.Id));
         }
 
         public IDataResult<List<Payment>> GetAll()
@@ -43,12 +43,23 @@ namespace Business.Concrete
 
         public IDataResult<Payment> GetByPaymentId(int paymentId)
         {
-            var result = _paymentDal.Get(x => x.PaymentId == paymentId);
+            var result = _paymentDal.Get(x => x.Id == paymentId);
             if (result == null)
             {
                 return new ErrorDataResult<Payment>();
             }
             return new SuccessDataResult<Payment>(result);
+        }
+
+        public IDataResult<Payment> GetPaymentByUserId(int userId)
+        {
+            var result = _paymentDal.Get(p => p.UserId == userId);
+            if (result == null)
+            {
+                return new ErrorDataResult<Payment>();
+            }
+            return new SuccessDataResult<Payment>(result);
+
         }
 
         public IResult Update(Payment payment)

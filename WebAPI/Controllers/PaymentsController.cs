@@ -13,14 +13,14 @@ namespace WebAPI.Controllers
     [ApiController]
     public class PaymentsController : ControllerBase
     {
-        IPaymentService _paymentService;
+        private IPaymentService _paymentService;
         public PaymentsController(IPaymentService paymentService)
         {
             _paymentService = paymentService;
         }
 
-        [HttpPost]
-        public IActionResult Add([FromBody] Payment payment)
+        [HttpPost("add")]
+        public IActionResult Add(Payment payment)
         {
             var result = _paymentService.Add(payment);
             if (result.Success)
@@ -30,8 +30,8 @@ namespace WebAPI.Controllers
             return BadRequest(result);
         }
 
-        [HttpPost]
-        public IActionResult Update([FromBody] Payment payment)
+        [HttpPost("update")]
+        public IActionResult Update(Payment payment)
         {
             var result = _paymentService.Update(payment);
             if (result.Success)
@@ -41,8 +41,8 @@ namespace WebAPI.Controllers
             return BadRequest(result);
         }
 
-        [HttpPost]
-        public IActionResult Delete([FromBody] Payment payment)
+        [HttpPost("delete")]
+        public IActionResult Delete(Payment payment)
         {
             var result = _paymentService.Delete(payment);
             if (result.Success)
@@ -53,7 +53,7 @@ namespace WebAPI.Controllers
         }
 
         [HttpGet]
-        public IActionResult Get([FromBody] Payment payment)
+        public IActionResult Get(Payment payment)
         {
             var result = _paymentService.Get(payment);
             if (result.Success)
@@ -63,7 +63,7 @@ namespace WebAPI.Controllers
             return BadRequest(result);
         }
 
-        [HttpGet]
+        [HttpGet("getall")]
         public IActionResult GetAll()
         {
             var result = _paymentService.GetAll();
@@ -74,7 +74,7 @@ namespace WebAPI.Controllers
             return BadRequest(result);
         }
 
-        [HttpGet]
+        [HttpGet("getbyid")]
 
         public IActionResult GetById(int paymentId)
         {
@@ -85,8 +85,19 @@ namespace WebAPI.Controllers
             }
             return BadRequest(result);
         }
+        [HttpGet("getbyuserId")]
+        public IActionResult GetByUserId(int userId)
+        {
+            var result = _paymentService.GetPaymentByUserId(userId);
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result);
+        }
 
-              }
+
+    }
 
  }
     
