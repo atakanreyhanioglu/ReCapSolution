@@ -67,27 +67,31 @@ IOC, AOP, Aspects, JWT
 
 ###  Projeden görüntüler [ReCap Frontend](https://github.com/atakanreyhanioglu/ReCapFrontend) 
 
-![image0](https://raw.githubusercontent.com/atakanreyhanioglu/ReCapFrontend/master/images/0.png)
+![image0](https://raw.githubusercontent.com/atakanreyhanioglu/ReCapFrontend/master/gifs/addcar.gif)
 
 * * *
 
-![image1](https://raw.githubusercontent.com/atakanreyhanioglu/ReCapFrontend/master/images/1.png)
+![image1](https://raw.githubusercontent.com/atakanreyhanioglu/ReCapFrontend/master/gifs/admin.gif)
 
 * * *
 
-![image2](https://raw.githubusercontent.com/atakanreyhanioglu/ReCapFrontend/master/images/2.png)
+![image2](https://raw.githubusercontent.com/atakanreyhanioglu/ReCapFrontend/master/gifs/delete.gif)
 
 * * *
 
-![image3](https://raw.githubusercontent.com/atakanreyhanioglu/ReCapFrontend/master/images/3.png)
+![image3](https://raw.githubusercontent.com/atakanreyhanioglu/ReCapFrontend/master/gifs/filtergif.gif)
 
 * * *
 
-![image4](https://raw.githubusercontent.com/atakanreyhanioglu/ReCapFrontend/master/images/4.png)
+![image4](https://raw.githubusercontent.com/atakanreyhanioglu/ReCapFrontend/master/gifs/login.gif)
 
 * * *
 
-![image5](https://raw.githubusercontent.com/atakanreyhanioglu/ReCapFrontend/master/images/5.png)
+![image5](https://raw.githubusercontent.com/atakanreyhanioglu/ReCapFrontend/master/gifs/payment.gif)
+
+* * *
+
+![image6](https://raw.githubusercontent.com/atakanreyhanioglu/ReCapFrontend/master/gifs/rentdate.gif)
 
 
 
