@@ -7,10 +7,7 @@ N-Katmanlı Solid mimari yapısı ile hazırlanan, EntityFramework kullanılarak
 
 ### Backend Tecnologies
 MsSql, Asp.Net Core for Restful api,EntityFramework Core,Autofac,FluentValidation
-MsSql, Asp.Net Core for Restful api, EntityFramework, Core, Autofac, FluentValidation
-### Layered Architecture Design Pattern
-IOC,AOP,Aspects,JWT
-IOC, AOP, Aspects, JWT
+Layered Architecture Design Pattern,IOC, AOP, Aspects, JWT
 
 ## :books:Katmanlar
 ![entities](https://i.ibb.co/LJn8Y9X/Ads-z-tasar-m.jpg)
