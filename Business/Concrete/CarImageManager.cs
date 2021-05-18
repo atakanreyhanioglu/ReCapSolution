@@ -29,7 +29,6 @@ namespace Business.Concrete
                 _fileHelper = fileHelper;
             }
 
-            [ValidationAspect(typeof(CarImageValidator))]
             public IResult Add(IFormFile file, CarImage carImage)
             {
                 var imageCount = _carImageDAL.GetAll(c => c.CarId == carImage.CarId).Count;
@@ -50,7 +49,6 @@ namespace Business.Concrete
                 return new SuccessResult(Messages.CarImageAdded);
             }
            
-            [ValidationAspect(typeof(CarImageValidator))]
             public IDataResult<CarImage> Get(int id)
             {
                 return new SuccessDataResult<CarImage>(_carImageDAL.Get(c => c.CarImageId == id));
